@@ -11,6 +11,7 @@
 
     <!-- FONT AWESOME CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- jQuery JS -->
     <script src="./js/jquery-3.7.1.min.js"></script>
@@ -32,12 +33,12 @@
 
             <aside id="sidebar-wrapper">
               <div class="sidebar-brand">
-                <img id="nav-image-1" src="./assets/images/Exit 96 Transparent.png" alt="">
+                <img id="nav-image-1" src="./assets/images/exit96-modern-logo-small.png" alt="">
                 <img id="nav-image-2" src="./assets/images/Exit 96 final sq 2.png" alt="">
               </div>
               <ul class="sidebar-nav">
                 <li class="active">
-                  <a href="#"><i class="fa fa-home"></i>Home</a>
+                  <a href="#"><i class="fa fa-home"></i>Dashboard</a>
                 </li>
                 <li>
                   <a href="#"><i class="fa fa-plug"></i>Charts</a>
@@ -51,8 +52,21 @@
             <div id="navbar-wrapper">
               <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
-                  <div class="navbar-header">
+                  <div class="navbar-header d-flex align-items-center">
                     <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+                    <div class="current-user d-flex align-items-center ms-3">
+                      <img src="./assets/images/user-image.jpg" alt="user-image">
+                      <p id="user-name" class="mt-2 ms-3">John Doe</p>
+
+                      <div class="dropdown-left ms-2">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
               </nav>
@@ -63,8 +77,9 @@
             <section id="main-content-wrapper">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h2 class="content-title">Test</h2>
-                    <p>Lorem ipsum...</p>
+                    
+                    
+
                   </div>
                 </div>
             </section>
