@@ -17,6 +17,7 @@
     height: 300px;
     background-color: #131212;
     background-image: linear-gradient(#131212 0%, #f52a2a 100%);
+    box-shadow: rgba(255, 0, 0, 0.5) 0px 15px 25px;
     color: white;
     border-radius: 8px;
     padding: 1rem 1.5rem;
@@ -27,6 +28,7 @@
     height: 300px;
     background-color: #08aeea;
     background-image: linear-gradient(180deg, #08aeea 0%, #2af598 100%);
+    box-shadow: rgba(0, 255, 98, 0.5) 0px 10px 20px;
     color: white;
     border-radius: 8px;
     padding: 1rem 1.5rem;
@@ -58,4 +60,14 @@
     stroke-width: 15;
     stroke-linecap: round;
     filter: drop-shadow(-3px -2px 5px rgba(255, 255, 255, 0.5));
+  }
+
+  /* MAP */
+
+  .map iframe{  /* MQ WORK */
+    height: 600px;
+    width: 1200px;
+    margin-top: 80px;
+    margin-left: 10%;
+    border-radius: 10px;
   }
