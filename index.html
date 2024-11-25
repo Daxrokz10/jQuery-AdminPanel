@@ -40,14 +40,14 @@
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
         <img id="nav-image-1" src="./assets/images/exit96-modern-logo-small.png" alt="">
-        <img id="nav-image-2" src="./assets/images/Exit 96 final sq 2.png" alt="">
+        <img id="nav-image-2" class="me-lg-2" src="./assets/images/exit96-image2.png" alt="">
       </div>
       <ul class="sidebar-nav">
         <li class="active">
-          <a href="#"><i class="fa fa-home"></i>Dashboard</a>
+          <a href="./index.html"><i class="fa fa-home"></i>Dashboard</a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-plug"></i>Charts</a>
+          <a href="./charts/charts.html"><i class="fa fa-plug"></i>Charts</a>
         </li>
         <li>
           <a href="#"><i class="fa fa-user"></i>Users</a>
@@ -87,7 +87,7 @@
               <!-- F A R M  M E T E R S -->
               <section class="farm-meter row">
 
-                <div class="col-3">
+                <div class="col-xl-3 col-md-6">
                   <div id="meter">
                     <div class="card1">
                       <h3 class="text-center" id="waterMeter">Water Level</h3>
@@ -99,7 +99,7 @@
                   </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-xl-3 col-md-6">
                   <div id="meter">
                     <div class="card2">
                       <h3 class="text-center" id="waterMeter">Fuel Level</h3>
@@ -111,7 +111,7 @@
                   </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-xl-3 col-md-6">
                   <div id="meter">
                     <div class="card1">
                       <h3 class="text-center" id="waterMeter">Energy Level</h3>
@@ -123,7 +123,7 @@
                   </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-xl-3 col-md-6">
                   <div id="meter">
                     <div class="card2">
                       <h3 class="text-center" id="waterMeter">Crop Health</h3>
@@ -143,6 +143,14 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3009.8746246376595!2d73.11175644094948!3d25.704490362859914!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1732254834929!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </section>
             
+              <!-- CHART -->
+               
+              <div class="chart-wrapper">
+                <canvas id='c'></canvas>
+                <div class="label">text</div>
+              </div>
+             
+
 
           </div>
         </div>
@@ -152,10 +160,21 @@
   </div> <!-- without this div navbar wont work!!! -->
 </body>
 
-<!-- CUSTOM JS -->
-<script src="./js/script.js"></script>
 
 <!-- FARM METER JS -->
 <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+
+
+<!-- APEXCHART JS -->
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://apexcharts.com/samples/assets/stock-prices.js"></script>
+
+
+<!-- CUSTOM JS -->
+<script src="./home/js/home.js"></script>
+<script src="./js/script.js"></script>
+
+
+
 
 </html>

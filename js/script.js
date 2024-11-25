@@ -89,4 +89,6 @@ $("document").ready(function(){
     createProgressBar("#container3", 0.15); // Gas meter
     createProgressBar("#container4", 0.9); // Internet meter
 
+    
+
 });

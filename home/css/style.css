@@ -71,3 +71,25 @@
     margin-left: 10%;
     border-radius: 10px;
   }
+
+  /* CHART */
+
+  .chart-wrapper {
+    display: block;
+    margin: 3em 30%;
+    border: 1px solid #555;
+    width: 700px;
+    height: 350px;
+    position: relative;
+  }
+  p{text-align:center;}
+  .label {
+    height: 1em;
+    padding: .3em;
+    background: rgba(255, 255, 255, .8);
+    position: absolute;
+    display: none;
+    color:#333;
+    
+  }
+
