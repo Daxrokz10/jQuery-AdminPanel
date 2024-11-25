@@ -1,60 +1,32 @@
-$primColor: #0d0d0d;
-$secColor: #fff;
+$bg: #252429;
 
-body {
-	overflow: hidden;
-	font-size: 16px;
+html,body{height:100%;}body{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;background:$bg;}
+
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-.chart-wrapper {
+
+html {
+  box-sizing: border-box;
+	padding: 20px;
+}
+
+.line-chart {
+	animation: fadeIn 600ms cubic-bezier(.57,.25,.65,1) 1 forwards;
+  	opacity: 0;
+	max-width: 340px;
 	width: 100%;
-	height: 100%;
-	background-color: $primColor;
-	position: absolute;
 }
 
-path {
-	stroke: $primColor;
-	/* stroke-width: 5px; */
-	cursor: pointer;
-	transition: fill 250ms;
-	&:hover {
-		/* stroke-width: 10px; */
-		fill: $secColor;
-	}
+.aspect-ratio {
+  height: 0;
+  padding-bottom: 50%; // 495h / 990w
 }
 
-text {
-	font-size: .8em;
-	text-transform: uppercase;
-	letter-spacing: .5px;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
-polyline {
-	fill: none;
-	stroke: $secColor;
-	stroke-width: 2px;
-	stroke-dasharray: 5px;
-}
-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 5px 10px;
-  outline: none;
-  font-size: .6em;
-  background-color: transparent;
-  color: $secColor;
-  border: 1px solid $secColor;
-	letter-spacing: 1px;
-	transition: all 250ms;
-	&:hover {
-		background-color: $secColor;
-		color: $primColor;
-		box-shadow: 0 0 2px $secColor;
-	}
-	&:active {
-		opacity: 0.5;
-	}
-}

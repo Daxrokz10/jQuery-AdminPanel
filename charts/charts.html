@@ -25,7 +25,7 @@
   <!-- GENERAL CSS -->
   <link rel="stylesheet" href="../css/general.css">
 
-  <!-- CHART CSS -->
+  <!-- CHART SCSS -->
   <link rel="stylesheet" href="./css/circle-chart.scss">
 
   <!-- CUSTOM CSS -->
@@ -34,8 +34,7 @@
   <!-- MEDIA CSS -->
   <link rel="stylesheet" href="../css/responsive/media.css">
   
-<!-- APEXCHART JS -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
 </head>
 
 <body>
@@ -91,10 +90,12 @@
           <div class="col-lg-12">
 
            
-             
-            <div class="chart-wrapper"></div>
-            <button onclick='replay()'>Replay</button>
-
+            <div class="line-chart">
+              <div class="aspect-ratio">
+                <canvas id="chart" ></canvas>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -105,7 +106,9 @@
 
 
 
-
+<!-- CHART JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://codepen.io/grayghostvisuals/pen/a08e0d79c150ff5030f9b6afaa137749.js"></script>
 
 <!-- CUSTOM JS -->
 <script src="./js/chart.js"></script>
