@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="./css/circle-chart.scss">
 
   <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="./home/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <!-- MEDIA CSS -->
   <link rel="stylesheet" href="../css/responsive/media.css">
@@ -51,11 +51,11 @@
         <li>
           <a href="../index.html"><i class="fa fa-home"></i>Dashboard</a>
         </li>
-        <li class="active">
-          <a href="#"><i class="fa fa-plug"></i>Charts</a>
-        </li>
         <li>
-          <a href="#"><i class="fa fa-solid fa-calendar-days"></i>Scheduler</a>
+          <a href="../charts/charts.html"><i class="fa fa-plug"></i>Charts</a>
+        </li>
+        <li class="active">
+          <a href="./schedule.html"><i class="fa fa-solid fa-calendar-days"></i>Scheduler</a>
         </li>
         <li>
           <a href="#"><i class="fa fa-solid fa-camera"></i>Cameras</a>
@@ -95,12 +95,15 @@
         <div class="row">
           <div class="col-lg-12">
 
-           
-            <div class="line-chart">
-              <div class="aspect-ratio">
-                <canvas id="chart" ></canvas>
+            <section>
+              <div class="box">
+                  <div class="container">
+                      <div id="dycalendar"><div class="dycalendar-month-container"><div class="dycalendar-header" data-option="{&quot;target&quot;:&quot;#dycalendar&quot;,&quot;type&quot;:&quot;month&quot;,&quot;dayformat&quot;:&quot;full&quot;,&quot;monthformat&quot;:&quot;full&quot;,&quot;highlighttargetdate&quot;:true,&quot;prevnextbutton&quot;:&quot;show&quot;,&quot;month&quot;:5,&quot;year&quot;:2024,&quot;date&quot;:8,&quot;highlighttoday&quot;:false}"><span class="dycalendar-prev-next-btn prev-btn" data-date="8" data-month="5" data-year="2024" data-btn="prev">&lt;</span><span class="dycalendar-span-month-year">June 2024</span><span class="dycalendar-prev-next-btn next-btn" data-date="8" data-month="5" data-year="2024" data-btn="next">&gt;</span></div><div class="dycalendar-body"><table><tbody><tr><td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td class="dycalendar-target-date">8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr><tr><td>30</td></tr></tbody></table></div></div></div>
+                  </div>
+                  
               </div>
-            </div>
+          </section>
+           
             
           </div>
         </div>
@@ -112,12 +115,9 @@
 
 
 
-<!-- CHART JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<script src="https://codepen.io/grayghostvisuals/pen/a08e0d79c150ff5030f9b6afaa137749.js"></script>
 
 <!-- CUSTOM JS -->
-<script src="./js/chart.js"></script>
+<script src="./js/schedule.js"></script>
 <script src="../js/script.js"></script>
 
 
