@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="./css/circle-chart.scss">
 
   <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="./home/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <!-- MEDIA CSS -->
   <link rel="stylesheet" href="../css/responsive/media.css">
@@ -51,14 +51,14 @@
         <li>
           <a href="../index.html"><i class="fa fa-home"></i>Dashboard</a>
         </li>
-        <li class="active">
-          <a href="./charts.html"><i class="fa fa-plug"></i>Charts</a>
-        </li>
         <li>
+          <a href="../charts/charts.html"><i class="fa fa-plug"></i>Charts</a>
+        </li>
+        <li class="active">
           <a href="../scheduler/schedule.html"><i class="fa fa-solid fa-calendar-days"></i>Scheduler</a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-solid fa-camera"></i>Cameras</a>
+          <a href="./camera.html"><i class="fa fa-solid fa-camera"></i>Cameras</a>
         </li>
         <li>
           <a href="#"><i class="fa fa-user"></i>Users</a>
@@ -95,12 +95,35 @@
         <div class="row">
           <div class="col-lg-12">
 
-           
-            <div class="line-chart">
-              <div class="aspect-ratio">
-                <canvas id="chart" ></canvas>
+           <div class="cameras container">
+            <div class="row">
+              <div class="col-6">
+                <div class="cam-1 text-center">
+                  <i class="fa-solid fa-camera"></i>
+                  <h2>Camera-1 Offline</h2>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="cam-2 text-center">
+                  <i class="fa-solid fa-camera"></i>
+                  <h2>Camera-2 Offline</h2>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="cam-3 text-center">
+                  <i class="fa-solid fa-camera"></i>
+                  <h2>Camera-3 Offline</h2>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="cam-4 text-center">
+                  <i class="fa-solid fa-camera"></i>
+                  <h2>Camera-4 Offline</h2>
+                </div>
               </div>
             </div>
+           </div>
+           
             
           </div>
         </div>
@@ -112,12 +135,9 @@
 
 
 
-<!-- CHART JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<script src="https://codepen.io/grayghostvisuals/pen/a08e0d79c150ff5030f9b6afaa137749.js"></script>
 
 <!-- CUSTOM JS -->
-<script src="./js/chart.js"></script>
+<script src="./js/camera.js"></script>
 <script src="../js/script.js"></script>
 
 

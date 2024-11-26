@@ -1,0 +1,16 @@
+.cameras{
+  border: white 1px solid;
+  height: 83vh;
+  margin-left: 50px;
+  margin-top: -10px;
+}
+.cameras .cam-1, .cameras .cam-2 , .cameras .cam-3 , .cameras .cam-4{ 
+  border: white 1px solid;
+  height: 38vh;
+  padding: 5px;
+  margin-top: 15px;
+}
+.cameras i{
+  font-size: 40px;
+  margin-top: 80px;
+}
