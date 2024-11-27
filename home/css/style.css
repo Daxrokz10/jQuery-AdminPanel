@@ -74,22 +74,18 @@
 
   /* CHART */
 
-  .chart-wrapper {
-    display: block;
-    margin: 3em 30%;
-    border: 1px solid #555;
-    width: 700px;
-    height: 350px;
+  canvas {
+    border: 2px solid rgb(33, 26, 68);
+    border-radius: 8px;
+  }
+  
+  .chart-container {
     position: relative;
+    margin: auto;
+    height: 60vh;
+    width: 60vw;
+    box-shadow: rgba(255, 0, 149, 0.5) 0px 10px 20px;
+    margin-left: 15%;
+    margin-top: 5%;
   }
-  p{text-align:center;}
-  .label {
-    height: 1em;
-    padding: .3em;
-    background: rgba(255, 255, 255, .8);
-    position: absolute;
-    display: none;
-    color:#333;
-    
-  }
-
+  
