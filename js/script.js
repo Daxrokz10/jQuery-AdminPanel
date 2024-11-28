@@ -91,4 +91,36 @@ $("document").ready(function(){
 
     
 
+
+    
 });
+
+// CURSOR 
+let trail = [];
+const trailLength = 20;
+
+document.addEventListener('mousemove', (e) => {
+    const cursor = document.createElement('div');
+    cursor.classList.add('cursor');
+    document.body.appendChild(cursor);
+
+    cursor.style.left = `${e.pageX}px`;
+    cursor.style.top = `${e.pageY}px`;
+
+    trail.push(cursor);
+
+    if (trail.length > trailLength) {
+        const oldCursor = trail.shift();
+        oldCursor.remove();
+    }
+});
+
+document.addEventListener('animationend', (e) => {
+    if (e.target.classList.contains('cursor')) {
+        e.target.remove();
+    }
+});
+
+
+
+
