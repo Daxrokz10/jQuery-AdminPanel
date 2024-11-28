@@ -1,127 +1,182 @@
-@media (min-width: 992px) {
-    #wrapper {
-      padding-left: 250px;
+/* XXL */
+
+@media(max-width:1920px){
+
+    /* NAVBAR-USER */
+
+    .current-user{
+        transform: translateX(1300px); /*mq needed*/
+      }
+      
+}
+
+
+/* XL  */
+
+@media(max-width:1399px){
+
+    /* NAVBAR-USER */
+
+    .current-user{
+        transform: translateX(900px); /*mq needed*/
+      }
+
+    /* MAP */
+
+    .map iframe{  
+        height: 500px;
+        width: 1100px;
+        margin-top: 80px;
+        margin-left: 8%;
     }
+
+    /* FARM METER */
+
+    .col-xl-3{
+        margin-right: -20px!important;  /*MQ!!!!*/
+      }
+      #meter{
+        width: 300px;
+      }
+      #meter .card1 {
+        width: 270px;
+        height: 270px;
+      }
+      #meter .card2 {
+        width: 270px;
+        height: 270px;
+      }      
+}
+
+/* L */
+
+@media(max-width:1199px){
+
+        /* FARM METER */
+
+        .col-lg-3{
+            margin-right: -20px!important;  /*MQ!!!!*/
+          }
+          #meter{
+            width: 300px;
+          }
+          #meter .card1 {
+            width: 270px;
+            height: 270px;
+          }
+          #meter .card2 {
+            width: 270px;
+            height: 270px;
+          }     
+
+          
+    /* MAP */
+
+    .map iframe{  
+        height: 400px;
+        width: 900px;
+        margin-top: 80px;
+        margin-left: 4%;
+    }
+}
+
+/* M  */
+
+@media(max-width:991px){
+
+        /* FARM METER */
+
+        .col-md-6{
+            margin-right: 0px!important;  /*MQ!!!!*/
+          }
+          #meter{
+            width: 300px;
+          }
+          #meter .card1 {
+            width: 270px;
+            height: 270px;
+            transform: translateX(120px);
+            margin-bottom: 10px!important;
+          }
+          #meter .card2 {
+            width: 270px;
+            height: 270px;
+            margin-bottom: 10px!important;
+          }  
+              /* MAP */
+
+    .map iframe{  
+        height: 400px;
+        width: 700px;
+        margin-top: 80px;
+        margin-left: 10%;
+    }
+}
+
+/* S  */
+
+@media(max-width:767px){
+
+        /* FARM METER */
+
+        .col-sm-6{
+            margin-right: 0px!important;  /*MQ!!!!*/
+          }
+          #meter{
+            width: 300px;
+          }
+          #meter .card1 {
+            width: 270px;
+            height: 270px;
+            transform: translateX(40px);
+            margin-bottom: 10px!important;
+          }
+          #meter .card2 {
+            width: 270px;
+            height: 270px;
+            transform: translateX(10px);
+            margin-bottom: 10px!important;
+          }  
+
+}
+
+/* XS  */
+
+@media(max-width:575px){
+
+            /* FARM METER */
+
+            .col-12{
+                margin-right: 0px!important;  /*MQ!!!!*/
+              }
+              #meter{
+                width: 300px;
+              }
+              #meter .card1 {
+                width: 270px;
+                height: 270px;
+                margin-left: 100px!important;
+                margin-bottom: 10px!important;
+              }
+              #meter .card2 {
+                width: 270px;
+                height: 270px;
+                margin-left: 130px;
+                margin-bottom: 10px!important;
+              }
+              
+                         /* MAP */
+
+    .map iframe{  
+        height: 800px;
+        width: 450px;
+        margin-top: 80px;
+        margin-left: 10%;
+    }
+}
+
+/* XXS */
+
+@media(max-width:412px){
     
-    #wrapper.toggled {
-      padding-left: 60px;
-    }
-  
-    #sidebar-wrapper {
-      width: 250px;
-    }
-    
-    #wrapper.toggled #sidebar-wrapper {
-      width: 60px;
-    }
-    
-    #wrapper.toggled #navbar-wrapper {
-      position: absolute;
-      margin-right: -190px;
-  }
-    
-    #wrapper.toggled #content-wrapper {
-      position: absolute;
-      margin-right: -190px;
-    }
-  
-    #navbar-wrapper {
-      position: relative;
-    }
-  
-    #wrapper.toggled {
-      padding-left: 60px;
-    }
-  
-    #content-wrapper {
-      position: relative;
-      top: 0;
-    }
-  
-    #wrapper.toggled #navbar-wrapper,
-    #wrapper.toggled #content-wrapper {
-      position: relative;
-      margin-right: 60px;
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    #wrapper {
-      padding-left: 60px;
-    }
-  
-    #sidebar-wrapper {
-      width: 60px;
-    }
-    
-  #wrapper.toggled #navbar-wrapper {
-      position: absolute;
-      margin-right: -250px;
-  }
-    
-    #wrapper.toggled #content-wrapper {
-      position: absolute;
-      margin-right: -250px;
-    }
-  
-    #navbar-wrapper {
-      position: relative;
-    }
-  
-    #wrapper.toggled {
-      padding-left: 250px;
-    }
-  
-    #content-wrapper {
-      position: relative;
-      top: 0;
-    }
-  
-    #wrapper.toggled #navbar-wrapper,
-    #wrapper.toggled #content-wrapper {
-      position: relative;
-      margin-right: 250px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    #wrapper {
-      padding-left: 0;
-    }
-  
-    #sidebar-wrapper {
-      width: 0;
-    }
-  
-    #wrapper.toggled #sidebar-wrapper {
-      width: 250px;
-    }
-    #wrapper.toggled #navbar-wrapper {
-      position: absolute;
-      margin-right: -250px;
-    }
-  
-    #wrapper.toggled #content-wrapper {
-      position: absolute;
-      margin-right: -250px;
-    }
-  
-    #navbar-wrapper {
-      position: relative;
-    }
-  
-    #wrapper.toggled {
-      padding-left: 250px;
-    }
-  
-    #content-wrapper {
-      position: relative;
-      top: 0;
-    }
-  
-    #wrapper.toggled #navbar-wrapper,
-    #wrapper.toggled #content-wrapper {
-      position: relative;
-      margin-right: 250px;
-    }
 }

@@ -11,10 +11,11 @@
  *
  * Date: 2014-08-17 sunday
  */
-
-.dycalendar-container {
-    display: inline-block;
-    border : 1px solid #eee;
+ .dycalendar-container {
+  display: inline-block;
+  border: 1px solid #eee;
+  background: linear-gradient(135deg, #6e7dff, #ff6e7d); /* Adjust colors as needed */
+  box-shadow: 0 0 20px rgba(110, 125, 255, 0.6); /* Neon glow effect */
 }
 
 .dycalendar-container.round-edge {
@@ -62,10 +63,10 @@
 /*
  * month calendar style
  *-------------------------------------------------*/
-.dycalendar-month-container {
-    padding : 10px;
-    text-align : center;
-    font-family : Arial;
+ .dycalendar-month-container {
+  padding: 10px;
+  text-align: center;
+  font-family: Arial;
 }
 
 .dycalendar-month-container div{
@@ -102,9 +103,9 @@
 
 .dycalendar-month-container .dycalendar-today-date,
 .dycalendar-month-container .dycalendar-target-date {
-    background-color: #111;
-    color : #fff;
-    border-radius: 2px;
+    background-color: #fff;
+    color: #111 !important;
+    box-shadow: 0 0 10px rgba(110, 125, 255, 0.6); /* Neon glow */
 }
 
 /*================================== MONTH CALENDAR ENS HERE ===============*/

@@ -134,7 +134,7 @@ body {
   }
   
   .current-user{
-    transform: translateX(800px);
+    transform: translateX(800px); /*mq needed*/
   }
   .current-user img{
     height: 50px;
