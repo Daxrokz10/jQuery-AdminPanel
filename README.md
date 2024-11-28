@@ -6,6 +6,8 @@ Deploy Link : https://exit96-adminpanel.netlify.app/
 
 The jQuery Admin Panel is a dynamic web application that provides an interactive user interface for managing various metrics like water, electricity, gas, and internet usage. The application features a collapsible sidebar and animated progress bars to visualize data effectively.
 
+![alt text](image.png)
+
 ## Features
 
 - **Collapsible Sidebar**: A responsive sidebar that toggles visibility, enhancing user navigation.
